@@ -32,14 +32,19 @@ class RouteServiceProvider extends ServiceProvider
     /**
      * Define the routes for the application.
      *
-     * @param  \Illuminate\Routing\Router  $router
+     * @param  \Illuminate\Routing\Router $router
+     *
      * @return void
      */
     public function map(Router $router)
     {
+        // デフォルトのルーティング
         $this->mapWebRoutes($router);
 
-        //
+        // テストのルーティング
+        if (config('app.debug')) {
+            $this->mapTestRoutes($router);
+        }
     }
 
     /**
@@ -47,15 +52,46 @@ class RouteServiceProvider extends ServiceProvider
      *
      * These routes all receive session state, CSRF protection, etc.
      *
-     * @param  \Illuminate\Routing\Router  $router
+     * @param  \Illuminate\Routing\Router $router
+     *
      * @return void
      */
     protected function mapWebRoutes(Router $router)
     {
-        $router->group([
-            'namespace' => $this->namespace, 'middleware' => 'web',
-        ], function ($router) {
-            require app_path('Http/routes.php');
-        });
+        $router->group(
+            [
+                'namespace'  => $this->namespace,
+                'middleware' => 'web',
+            ],
+            function ($router) {
+                foreach (\Config::get('routes.web') as $file) {
+                    require app_path('Http/Routes/web') . DIRECTORY_SEPARATOR . $file . '.php';
+                }
+            }
+        );
+    }
+
+    /**
+     * Define the "testing" routes for the test.
+     *
+     * These routes all receive session state, CSRF protection, etc.
+     *
+     * @param  \Illuminate\Routing\Router $router
+     *
+     * @return void
+     */
+    protected function mapTestRoutes(Router $router)
+    {
+        $router->group(
+            [
+                'namespace'  => $this->namespace,
+                'middleware' => 'web',
+            ],
+            function ($router) {
+                foreach (\Config::get('routes.testing') as $file) {
+                    require app_path('Http/Routes/testing') . DIRECTORY_SEPARATOR . $file . '.php';
+                }
+            }
+        );
     }
 }
