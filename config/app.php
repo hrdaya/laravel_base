@@ -171,6 +171,7 @@ return [
         /*
          * Original Providers
          */
+        App\Providers\Custom\ConfigServiceProvider::class,
         App\Providers\Custom\PdfServiceProvider::class,
 
     ],
