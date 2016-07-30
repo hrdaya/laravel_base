@@ -37,7 +37,7 @@ elixir(function(mix) {
          |==============================================================================================================
          */
         // フォントのコピー
-        .copy('node_modules/bootstrap-sass/assets/bootstrap/fonts/', 'public/fonts/')
+        .copy('node_modules/bootstrap-sass/assets/fonts/bootstrap', 'public/fonts/')
         /*
          |==============================================================================================================
          | javascript
@@ -46,7 +46,7 @@ elixir(function(mix) {
         // jquery.jsのコピー
         .copy('node_modules/jquery/dist/jquery.min.js', 'public/js/jquery.js')
         // bootstrap.jsのコピー
-        .copy('node_modules/bootstrap-sass/assets/bootstrap/javascripts/bootstrap.min.js', 'public/js/bootstrap.js')
+        .copy('node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js', 'public/js/bootstrap.js')
         // vue.jsのコピー
         .copy('node_modules/vue/dist/vue.min.js', 'public/js/vue.js')
         /*
