@@ -1,27 +1,40 @@
-# Laravel PHP Framework
+# Laravel5.2関連ドキュメント
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+## 基礎
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+- [公式](https://laravel.com/)
+- [日本語ドキュメント](http://readouble.com/)
+- [ララ帳](https://laravel10.wordpress.com/)
+- [yukisovのメモ帳](http://www.pupha.net/archives/tag/laravel/)
+- [Qiita[laravel]](http://qiita.com/tags/laravel)
+- [Laravel 5.1 LTSでサービスを作る](http://sssslide.com/www.slideshare.net/infinite_loop/laravel-51-lts)
+- [Laravel - スタッフブログ](http://nextat.co.jp/staff/archives/category/php/laravel)
+- [Laravelでプロジェクトを作成したらまずやることメモ](http://qiita.com/ponko2/items/f2f59b43dae1561ceb50#laravel-5-repositories%E3%81%AE%E8%A8%AD%E5%AE%9A)
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+## コンポーネント
 
-## Official Documentation
+- [laravelcollective(フォーム)](https://laravelcollective.com/docs/5.2/html)
+- [laravelcollective(Command Bus)](https://laravelcollective.com/docs/5.2/bus)
+- [Intervention Image(画像処理)](http://image.intervention.io/)
+- [Laravel Excel(Excel)](http://www.maatwebsite.nl/laravel-excel/docs)
+- [laravel-iseries(DB2)](https://github.com/JacksonWebServices/laravel-iseries#installation)
+- [laravel-debugbar(デバッグバー)](https://github.com/barryvdh/laravel-debugbar)
+- [laravel-ide-helper(IDE補完)](https://github.com/barryvdh/laravel-ide-helper)
+- [Phing](http://qiita.com/nyanchu/items/d881c34c3112a2ffcdf6)
+- [whoops](https://github.com/filp/whoops)
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+## テスト
 
-## Contributing
+- [Laravel 5.2 テスト](http://readouble.com/laravel/5/2/ja/testing.html)
+- [PHPUnit](https://phpunit.de/manual/current/ja/index.html)
+- [Mockery](https://github.com/padraic/mockery)
+- [Laravelでアプリケーションテストをする際のモックの話](http://sota1235.hatenablog.com/entry/2015/10/12/210000)
+- [Faker](https://github.com/fzaninotto/Faker)
+- [Faker@PHPでダミーデータを作る](http://qiita.com/zaburo/items/4487b23543ce88ce7f0c)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
 
-## Security Vulnerabilities
+## DB
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+- [Database: Query Builder](https://laravel.com/docs/5.1/queries)
+- [Laravel 5.1 データベース：クエリービルダー](http://readouble.com/laravel/5/1/ja/queries.html)
+- [Queryビルダークラスのメソッド一覧](http://laravel4.winroad.jp/2013/05/22/query%E3%83%93%E3%83%AB%E3%83%80%E3%83%BC%E3%82%AF%E3%83%A9%E3%82%B9%E3%81%AE%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89%E4%B8%80%E8%A6%A7/)
