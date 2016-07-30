@@ -166,6 +166,7 @@ return [
         Maatwebsite\Excel\ExcelServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
         GrahamCampbell\Exceptions\ExceptionsServiceProvider::class,
+        JWS\Iseries\IseriesServiceProvider::class,
 
         /*
          * Original Providers

@@ -15,7 +15,8 @@
         "intervention/image": "^2.3",
         "caouecs/laravel-lang": "~3.0",
         "barryvdh/laravel-debugbar": "^2.2",
-        "graham-campbell/exceptions": "^8.7"
+        "graham-campbell/exceptions": "^8.7",
+        "jacksonwebservices/laravel-iseries": "3.0.*"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
