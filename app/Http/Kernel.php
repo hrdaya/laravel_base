@@ -33,6 +33,7 @@ class Kernel extends HttpKernel
             \App\Http\Middleware\VerifyCsrfToken::class,
             // ここから追加分
             \App\Http\Middleware\HttpGlobal\Title::class,
+            \App\Http\Middleware\HttpGlobal\ResponseHeader::class,
         ],
 
         'api' => [
