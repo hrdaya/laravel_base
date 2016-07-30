@@ -54,5 +54,8 @@ class Kernel extends HttpKernel
         'can' => \Illuminate\Foundation\Http\Middleware\Authorize::class,
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
+        // ここから追加分
+        'ajaxOnly'   => \App\Http\Middleware\HttpRoute\AjaxOnly::class,
+        'httpOnly'   => \App\Http\Middleware\HttpRoute\HttpOnly::class,
     ];
 }
