@@ -13,7 +13,8 @@
         "maatwebsite/excel": "~2.1.0",
         "setasign/fpdi-tcpdf": "~1.6.0",
         "intervention/image": "^2.3",
-        "caouecs/laravel-lang": "~3.0"
+        "caouecs/laravel-lang": "~3.0",
+        "barryvdh/laravel-debugbar": "^2.2"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
