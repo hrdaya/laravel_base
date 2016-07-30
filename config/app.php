@@ -165,6 +165,7 @@ return [
         Collective\Bus\BusServiceProvider::class,
         Maatwebsite\Excel\ExcelServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
+        GrahamCampbell\Exceptions\ExceptionsServiceProvider::class,
 
         /*
          * Original Providers
