@@ -164,6 +164,11 @@ return [
         Collective\Bus\BusServiceProvider::class,
         Maatwebsite\Excel\ExcelServiceProvider::class,
 
+        /*
+         * Original Providers
+         */
+        App\Providers\Custom\PdfServiceProvider::class,
+
     ],
 
     /*
@@ -216,6 +221,11 @@ return [
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
         'Excel' => Maatwebsite\Excel\Facades\Excel::class,
+
+        /*
+         * Original Alias
+         */
+        'Pdf' => App\Facades\Pdf::class,
 
     ],
 
