@@ -163,6 +163,7 @@ return [
         Collective\Html\HtmlServiceProvider::class,
         Collective\Bus\BusServiceProvider::class,
         Maatwebsite\Excel\ExcelServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
 
         /*
          * Original Providers
@@ -226,6 +227,7 @@ return [
          * Original Alias
          */
         'Pdf' => App\Facades\Pdf::class,
+        'Image' => Intervention\Image\Facades\Image::class,
 
     ],
 

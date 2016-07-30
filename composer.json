@@ -11,7 +11,8 @@
         "laravelcollective/bus": "5.2.*",
         "barryvdh/laravel-ide-helper": "^2.2",
         "maatwebsite/excel": "~2.1.0",
-        "setasign/fpdi-tcpdf": "~1.6.0"
+        "setasign/fpdi-tcpdf": "~1.6.0",
+        "intervention/image": "^2.3"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
