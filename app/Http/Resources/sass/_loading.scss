@@ -1,0 +1,33 @@
+#loader-bg {
+  background: #000;
+  display: none;
+  height: 100%;
+  left: 0;
+  opacity: .7;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+
+  &.show {
+    display: block;
+
+    #loader {
+      display: block;
+    }
+  }
+}
+
+#loader {
+  color: #fff;
+  display: none;
+  height: 50px;
+  left: 50%;
+  margin-left: -25px;
+  margin-top: -25px;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  width: 50px;
+  z-index: 10001;
+}
