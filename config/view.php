@@ -14,7 +14,7 @@ return [
     */
 
     'paths' => [
-        realpath(base_path('resources/views')),
+        realpath(base_path('app/Http/Views')),
     ],
 
     /*
@@ -28,6 +28,6 @@ return [
     |
     */
 
-    'compiled' => realpath(app_path('Http/Views')),
+    'compiled' => realpath(storage_path('framework/views')),
 
 ];
