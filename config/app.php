@@ -222,12 +222,12 @@ return [
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
         'Excel' => Maatwebsite\Excel\Facades\Excel::class,
+        'Image' => Intervention\Image\Facades\Image::class,
 
         /*
          * Original Alias
          */
         'Pdf' => App\Facades\Pdf::class,
-        'Image' => Intervention\Image\Facades\Image::class,
 
     ],
 
