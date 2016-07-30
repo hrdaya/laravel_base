@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "729834f7777fcc6df54546dd8dbd3566",
-    "content-hash": "59b2c2d385dc68bf4023ffc20dfd922b",
+    "hash": "60372f4049ea020d41e8d3b0d179d9cf",
+    "content-hash": "6df0c3f5681c01b8f62e7e4ae5cb9428",
     "packages": [
         {
             "name": "barryvdh/laravel-debugbar",
@@ -558,6 +558,55 @@
                 "watermark"
             ],
             "time": "2016-04-26 14:08:40"
+        },
+        {
+            "name": "jacksonwebservices/laravel-iseries",
+            "version": "3.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JacksonWebServices/laravel-iseries.git",
+                "reference": "1a388a45bc7746aa1401e1acb2a7d7340a70a527"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JacksonWebServices/laravel-iseries/zipball/1a388a45bc7746aa1401e1acb2a7d7340a70a527",
+                "reference": "1a388a45bc7746aa1401e1acb2a7d7340a70a527",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "~5.0",
+                "illuminate/support": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JWS\\Iseries\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Joshua Chandler",
+                    "email": "jchandler@jacksonfurnind.com"
+                },
+                {
+                    "name": "Robert Davis",
+                    "email": "davisr@jacksonfurnind.com"
+                }
+            ],
+            "description": "Laravel-odbc-iseris connection",
+            "keywords": [
+                "database",
+                "db2",
+                "laravel",
+                "odbc",
+                "pdo"
+            ],
+            "time": "2016-06-22 14:31:54"
         },
         {
             "name": "jakub-onderka/php-console-color",
