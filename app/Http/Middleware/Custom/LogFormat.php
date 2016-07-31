@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Middleware\HttpGlobal;
+namespace App\Http\Middleware\Custom;
 
 use Closure;
 use App\Libs\LogFormat as AppLog;

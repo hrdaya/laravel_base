@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Middleware\HttpRoute;
+namespace App\Http\Middleware\Custom;
 
 use Closure;
 
-class AjaxOnly
+class HttpOnly
 {
 
     /**
@@ -17,12 +17,12 @@ class AjaxOnly
      */
     public function handle($request, Closure $next)
     {
-        // リクエストがajaxではない場合の処理
-        if (!$request->ajax()) {
+        // リクエストがHTTPではない場合の処理
+        if ($request->ajax()) {
             abort(404);
         }
 
-        // ajaxからのアクセスだと、そのまま次の処理に進みます
+        // HTTPからのアクセスだと、そのまま次の処理に進みます
         return $next($request);
     }
 

@@ -3,7 +3,7 @@ namespace PHPSTORM_META {
 
    /**
     * PhpStorm Meta file, to provide autocomplete information for PhpStorm
-    * Generated on 2016-07-30.
+    * Generated on 2016-07-31.
     *
     * @author Barry vd. Heuvel <barryvdh@gmail.com>
     * @see https://github.com/barryvdh/laravel-ide-helper
@@ -27,6 +27,7 @@ namespace PHPSTORM_META {
             'db.factory' instanceof \Illuminate\Database\Connectors\ConnectionFactory,
             'db' instanceof \Illuminate\Database\DatabaseManager,
             'db.connection' instanceof \Illuminate\Database\MySqlConnection,
+            'encrypter' instanceof \Illuminate\Encryption\Encrypter,
             'files' instanceof \Illuminate\Filesystem\Filesystem,
             'filesystem' instanceof \Illuminate\Filesystem\FilesystemManager,
             'filesystem.disk' instanceof \Illuminate\Filesystem\FilesystemAdapter,
@@ -111,6 +112,7 @@ namespace PHPSTORM_META {
             'hash' instanceof \Illuminate\Hashing\BcryptHasher,
             'swift.transport' instanceof \Illuminate\Mail\TransportManager,
             'swift.mailer' instanceof \Swift_Mailer,
+            'mailer' instanceof \Illuminate\Mail\Mailer,
             'Illuminate\Contracts\Pipeline\Hub' instanceof \Illuminate\Pipeline\Hub,
             'queue' instanceof \Illuminate\Queue\QueueManager,
             'queue.connection' instanceof \Illuminate\Queue\SyncQueue,
@@ -120,6 +122,7 @@ namespace PHPSTORM_META {
             'command.queue.listen' instanceof \Illuminate\Queue\Console\ListenCommand,
             'queue.listener' instanceof \Illuminate\Queue\Listener,
             'queue.failer' instanceof \Illuminate\Queue\Failed\DatabaseFailedJobProvider,
+            'IlluminateQueueClosure' instanceof \IlluminateQueueClosure,
             'auth.password' instanceof \Illuminate\Auth\Passwords\PasswordBrokerManager,
             'auth.password.broker' instanceof \Illuminate\Auth\Passwords\PasswordBroker,
             'translation.loader' instanceof \Illuminate\Translation\FileLoader,
@@ -151,6 +154,7 @@ namespace PHPSTORM_META {
             'db.factory' instanceof \Illuminate\Database\Connectors\ConnectionFactory,
             'db' instanceof \Illuminate\Database\DatabaseManager,
             'db.connection' instanceof \Illuminate\Database\MySqlConnection,
+            'encrypter' instanceof \Illuminate\Encryption\Encrypter,
             'files' instanceof \Illuminate\Filesystem\Filesystem,
             'filesystem' instanceof \Illuminate\Filesystem\FilesystemManager,
             'filesystem.disk' instanceof \Illuminate\Filesystem\FilesystemAdapter,
@@ -235,6 +239,7 @@ namespace PHPSTORM_META {
             'hash' instanceof \Illuminate\Hashing\BcryptHasher,
             'swift.transport' instanceof \Illuminate\Mail\TransportManager,
             'swift.mailer' instanceof \Swift_Mailer,
+            'mailer' instanceof \Illuminate\Mail\Mailer,
             'Illuminate\Contracts\Pipeline\Hub' instanceof \Illuminate\Pipeline\Hub,
             'queue' instanceof \Illuminate\Queue\QueueManager,
             'queue.connection' instanceof \Illuminate\Queue\SyncQueue,
@@ -244,6 +249,7 @@ namespace PHPSTORM_META {
             'command.queue.listen' instanceof \Illuminate\Queue\Console\ListenCommand,
             'queue.listener' instanceof \Illuminate\Queue\Listener,
             'queue.failer' instanceof \Illuminate\Queue\Failed\DatabaseFailedJobProvider,
+            'IlluminateQueueClosure' instanceof \IlluminateQueueClosure,
             'auth.password' instanceof \Illuminate\Auth\Passwords\PasswordBrokerManager,
             'auth.password.broker' instanceof \Illuminate\Auth\Passwords\PasswordBroker,
             'translation.loader' instanceof \Illuminate\Translation\FileLoader,
@@ -275,6 +281,7 @@ namespace PHPSTORM_META {
             'db.factory' instanceof \Illuminate\Database\Connectors\ConnectionFactory,
             'db' instanceof \Illuminate\Database\DatabaseManager,
             'db.connection' instanceof \Illuminate\Database\MySqlConnection,
+            'encrypter' instanceof \Illuminate\Encryption\Encrypter,
             'files' instanceof \Illuminate\Filesystem\Filesystem,
             'filesystem' instanceof \Illuminate\Filesystem\FilesystemManager,
             'filesystem.disk' instanceof \Illuminate\Filesystem\FilesystemAdapter,
@@ -359,6 +366,7 @@ namespace PHPSTORM_META {
             'hash' instanceof \Illuminate\Hashing\BcryptHasher,
             'swift.transport' instanceof \Illuminate\Mail\TransportManager,
             'swift.mailer' instanceof \Swift_Mailer,
+            'mailer' instanceof \Illuminate\Mail\Mailer,
             'Illuminate\Contracts\Pipeline\Hub' instanceof \Illuminate\Pipeline\Hub,
             'queue' instanceof \Illuminate\Queue\QueueManager,
             'queue.connection' instanceof \Illuminate\Queue\SyncQueue,
@@ -368,6 +376,7 @@ namespace PHPSTORM_META {
             'command.queue.listen' instanceof \Illuminate\Queue\Console\ListenCommand,
             'queue.listener' instanceof \Illuminate\Queue\Listener,
             'queue.failer' instanceof \Illuminate\Queue\Failed\DatabaseFailedJobProvider,
+            'IlluminateQueueClosure' instanceof \IlluminateQueueClosure,
             'auth.password' instanceof \Illuminate\Auth\Passwords\PasswordBrokerManager,
             'auth.password.broker' instanceof \Illuminate\Auth\Passwords\PasswordBroker,
             'translation.loader' instanceof \Illuminate\Translation\FileLoader,
@@ -399,6 +408,7 @@ namespace PHPSTORM_META {
             'db.factory' instanceof \Illuminate\Database\Connectors\ConnectionFactory,
             'db' instanceof \Illuminate\Database\DatabaseManager,
             'db.connection' instanceof \Illuminate\Database\MySqlConnection,
+            'encrypter' instanceof \Illuminate\Encryption\Encrypter,
             'files' instanceof \Illuminate\Filesystem\Filesystem,
             'filesystem' instanceof \Illuminate\Filesystem\FilesystemManager,
             'filesystem.disk' instanceof \Illuminate\Filesystem\FilesystemAdapter,
@@ -483,6 +493,7 @@ namespace PHPSTORM_META {
             'hash' instanceof \Illuminate\Hashing\BcryptHasher,
             'swift.transport' instanceof \Illuminate\Mail\TransportManager,
             'swift.mailer' instanceof \Swift_Mailer,
+            'mailer' instanceof \Illuminate\Mail\Mailer,
             'Illuminate\Contracts\Pipeline\Hub' instanceof \Illuminate\Pipeline\Hub,
             'queue' instanceof \Illuminate\Queue\QueueManager,
             'queue.connection' instanceof \Illuminate\Queue\SyncQueue,
@@ -492,6 +503,7 @@ namespace PHPSTORM_META {
             'command.queue.listen' instanceof \Illuminate\Queue\Console\ListenCommand,
             'queue.listener' instanceof \Illuminate\Queue\Listener,
             'queue.failer' instanceof \Illuminate\Queue\Failed\DatabaseFailedJobProvider,
+            'IlluminateQueueClosure' instanceof \IlluminateQueueClosure,
             'auth.password' instanceof \Illuminate\Auth\Passwords\PasswordBrokerManager,
             'auth.password.broker' instanceof \Illuminate\Auth\Passwords\PasswordBroker,
             'translation.loader' instanceof \Illuminate\Translation\FileLoader,
