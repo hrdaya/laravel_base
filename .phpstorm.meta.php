@@ -132,9 +132,9 @@ namespace PHPSTORM_META {
             'command.ide-helper.models' instanceof \Barryvdh\LaravelIdeHelper\Console\ModelsCommand,
             'command.ide-helper.meta' instanceof \Barryvdh\LaravelIdeHelper\Console\MetaCommand,
             'blade.compiler' instanceof \Illuminate\View\Compilers\BladeCompiler,
+            'Collective\Bus\Dispatcher' instanceof \Collective\Bus\Dispatcher,
             'html' instanceof \Collective\Html\HtmlBuilder,
             'form' instanceof \Collective\Html\FormBuilder,
-            'Collective\Bus\Dispatcher' instanceof \Collective\Bus\Dispatcher,
         ],
         \Illuminate\Contracts\Container\Container::make('') => [
             '' == '@',
@@ -259,9 +259,9 @@ namespace PHPSTORM_META {
             'command.ide-helper.models' instanceof \Barryvdh\LaravelIdeHelper\Console\ModelsCommand,
             'command.ide-helper.meta' instanceof \Barryvdh\LaravelIdeHelper\Console\MetaCommand,
             'blade.compiler' instanceof \Illuminate\View\Compilers\BladeCompiler,
+            'Collective\Bus\Dispatcher' instanceof \Collective\Bus\Dispatcher,
             'html' instanceof \Collective\Html\HtmlBuilder,
             'form' instanceof \Collective\Html\FormBuilder,
-            'Collective\Bus\Dispatcher' instanceof \Collective\Bus\Dispatcher,
         ],
         \App::make('') => [
             '' == '@',
@@ -386,9 +386,9 @@ namespace PHPSTORM_META {
             'command.ide-helper.models' instanceof \Barryvdh\LaravelIdeHelper\Console\ModelsCommand,
             'command.ide-helper.meta' instanceof \Barryvdh\LaravelIdeHelper\Console\MetaCommand,
             'blade.compiler' instanceof \Illuminate\View\Compilers\BladeCompiler,
+            'Collective\Bus\Dispatcher' instanceof \Collective\Bus\Dispatcher,
             'html' instanceof \Collective\Html\HtmlBuilder,
             'form' instanceof \Collective\Html\FormBuilder,
-            'Collective\Bus\Dispatcher' instanceof \Collective\Bus\Dispatcher,
         ],
         \app('') => [
             '' == '@',
@@ -513,9 +513,9 @@ namespace PHPSTORM_META {
             'command.ide-helper.models' instanceof \Barryvdh\LaravelIdeHelper\Console\ModelsCommand,
             'command.ide-helper.meta' instanceof \Barryvdh\LaravelIdeHelper\Console\MetaCommand,
             'blade.compiler' instanceof \Illuminate\View\Compilers\BladeCompiler,
+            'Collective\Bus\Dispatcher' instanceof \Collective\Bus\Dispatcher,
             'html' instanceof \Collective\Html\HtmlBuilder,
             'form' instanceof \Collective\Html\FormBuilder,
-            'Collective\Bus\Dispatcher' instanceof \Collective\Bus\Dispatcher,
         ],
     ];
 }
