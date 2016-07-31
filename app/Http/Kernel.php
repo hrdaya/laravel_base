@@ -26,7 +26,7 @@ class Kernel extends HttpKernel
     protected $middlewareGroups = [
         'web' => [
             // Log用の設定
-            \App\Http\Middleware\HttpGlobal\LogFormat::class,
+            \App\Http\Middleware\Custom\LogFormat::class,
             // デフォルトの登録分
             \App\Http\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
@@ -34,8 +34,8 @@ class Kernel extends HttpKernel
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \App\Http\Middleware\VerifyCsrfToken::class,
             // ここから追加分
-            \App\Http\Middleware\HttpGlobal\Title::class,
-            \App\Http\Middleware\HttpGlobal\ResponseHeader::class,
+            \App\Http\Middleware\Custom\Title::class,
+            \App\Http\Middleware\Custom\ResponseHeader::class,
         ],
 
         'api' => [
@@ -58,7 +58,7 @@ class Kernel extends HttpKernel
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         // ここから追加分
-        'ajaxOnly'   => \App\Http\Middleware\HttpRoute\AjaxOnly::class,
-        'httpOnly'   => \App\Http\Middleware\HttpRoute\HttpOnly::class,
+        'ajaxOnly'   => \App\Http\Middleware\Custom\AjaxOnly::class,
+        'httpOnly'   => \App\Http\Middleware\Custom\HttpOnly::class,
     ];
 }
