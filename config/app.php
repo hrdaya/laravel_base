@@ -161,7 +161,6 @@ return [
          */
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
-        Collective\Html\HtmlServiceProvider::class,
         Collective\Bus\BusServiceProvider::class,
         Maatwebsite\Excel\ExcelServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
@@ -173,6 +172,7 @@ return [
          */
         App\Providers\Custom\ConfigServiceProvider::class,
         App\Providers\Custom\PdfServiceProvider::class,
+        App\Providers\Custom\HtmlServiceProvider::class,
 
     ],
 
