@@ -25,6 +25,8 @@ class Kernel extends HttpKernel
      */
     protected $middlewareGroups = [
         'web' => [
+            // Log用の設定
+            \App\Http\Middleware\HttpGlobal\LogFormat::class,
             // デフォルトの登録分
             \App\Http\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,

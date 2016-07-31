@@ -1,5 +1,7 @@
 <?php
 
+use App\Libs\LogFormat;
+
 /*
 |--------------------------------------------------------------------------
 | Create The Application
@@ -39,6 +41,21 @@ $app->singleton(
 $app->singleton(
     Illuminate\Contracts\Debug\ExceptionHandler::class,
     App\Exceptions\Handler::class
+);
+
+/*
+ * --------------------------------------------------------------------------
+ * ログのカスタマイズ
+ * --------------------------------------------------------------------------
+ *
+ * ログをカスタマイズします。
+ * configureMonologUsing()は$appをreturnする直前に呼び出す必要があります。
+ *
+ */
+$app->configureMonologUsing(
+    function ($monolog) {
+        (new LogFormat())->init($monolog);
+    }
 );
 
 /*
