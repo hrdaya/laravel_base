@@ -173,6 +173,7 @@ return [
         App\Providers\Custom\ConfigServiceProvider::class,
         App\Providers\Custom\PdfServiceProvider::class,
         App\Providers\Custom\HtmlServiceProvider::class,
+        App\Providers\Custom\ViewExtendsServiceProvider::class,
 
     ],
 
