@@ -95,6 +95,17 @@ return [
     'cipher' => 'AES-256-CBC',
 
     /*
+     |--------------------------------------------------------------------------
+     | ハッシュソルト
+     |--------------------------------------------------------------------------
+     |
+     | このキーはハッシュ値を作成する際のSALTに使用されます。
+     | 必ず変更してください。
+     |
+     */
+    'salt' => env('APP_SALT', 'SomeRandomString'),
+
+    /*
     |--------------------------------------------------------------------------
     | Logging Configuration
     |--------------------------------------------------------------------------
@@ -175,6 +186,7 @@ return [
         App\Providers\Custom\PdfServiceProvider::class,
         App\Providers\Custom\HtmlServiceProvider::class,
         App\Providers\Custom\ViewExtendsServiceProvider::class,
+        App\Providers\Custom\HasherServiceProvider::class,
 
     ],
 
@@ -235,6 +247,9 @@ return [
          * Original Alias
          */
         'Pdf' => App\Facades\Pdf::class,
+        'Sha1' => App\Facades\Sha1::class,
+        'Sha256' => App\Facades\Sha256::class,
+        'Sha512' => App\Facades\Sha512::class,
 
     ],
 
