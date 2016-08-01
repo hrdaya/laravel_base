@@ -28,6 +28,7 @@
     },
     "autoload": {
         "classmap": [
+            "app/Libs/Helper/",
             "database"
         ],
         "psr-4": {
