@@ -6,7 +6,6 @@ use Closure;
 
 class HttpOnly
 {
-
     /**
      * Handle an incoming request.
      *
@@ -25,5 +24,4 @@ class HttpOnly
         // HTTPからのアクセスだと、そのまま次の処理に進みます
         return $next($request);
     }
-
 }

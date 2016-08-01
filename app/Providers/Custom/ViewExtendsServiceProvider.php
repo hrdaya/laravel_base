@@ -7,9 +7,8 @@ use App\Libs\Html\ViewExtends;
 
 class ViewExtendsServiceProvider extends ServiceProvider
 {
-
     /**
-     * アプリケーションサービスの初期化処理
+     * アプリケーションサービスの初期化処理.
      *
      * @return void
      */
@@ -19,7 +18,7 @@ class ViewExtendsServiceProvider extends ServiceProvider
     }
 
     /**
-     * コンテナ結合の登録
+     * コンテナ結合の登録.
      *
      * @return void
      */
@@ -27,5 +26,4 @@ class ViewExtendsServiceProvider extends ServiceProvider
     {
         //
     }
-
 }

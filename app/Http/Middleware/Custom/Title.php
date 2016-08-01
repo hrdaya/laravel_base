@@ -6,7 +6,6 @@ use Closure;
 
 class Title
 {
-
     /**
      * Handle an incoming request.
      *
@@ -24,8 +23,8 @@ class Title
         $routNames = explode('.', \Route::currentRouteName());
         $title = null;
         // config/title.phpのtitlesからタイトルを取得する
-        for ($i=count($routNames)-1;$i>=0;$i--) {
-            $title = \Config::get('title.titles.' . implode('.', $routNames));
+        for ($i = count($routNames) - 1; $i >= 0; $i--) {
+            $title = \Config::get('title.titles.'.implode('.', $routNames));
             if (is_string($title)) {
                 break;
             }
@@ -36,5 +35,4 @@ class Title
 
         return $next($request);
     }
-
 }

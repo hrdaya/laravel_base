@@ -8,7 +8,6 @@ use App\Libs\Html\FormBuilder;
 
 class HtmlServiceProvider extends CollectiveHtmlServiceProvider
 {
-
     /**
      * Register the service provider.
      *

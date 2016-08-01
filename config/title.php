@@ -16,5 +16,5 @@ return [
     'titles' => [
         'index'   => 'トップページ',
         'testing' => 'テストページ',
-    ]
+    ],
 ];

@@ -7,10 +7,9 @@ use App\Libs\LogFormat;
 
 abstract class CommandAbstract extends Command
 {
-
     /**
      * コマンド名、引数、オプションを文字列で指定します
-     * protected $signature = 'command:name {argument} {--option}'
+     * protected $signature = 'command:name {argument} {--option}'.
      *
      * 引数（必須）
      * 'command:name {argument}'
@@ -37,28 +36,28 @@ abstract class CommandAbstract extends Command
     /**
      * コンソールコマンドの説明(必須で入力)
      * バッチ名を入力すること
-     * 例) 【バッチ番号: バッチ名】
+     * 例) 【バッチ番号: バッチ名】.
      *
      * @var string
      */
     protected $description = '';
 
     /**
-     * メール送信用等のメッセージを保存しておくための配列
+     * メール送信用等のメッセージを保存しておくための配列.
      *
      * @var array
      */
     protected $messages = [];
 
     /**
-     * エラーメッセージを保存しておくための配列
+     * エラーメッセージを保存しておくための配列.
      *
      * @var array
      */
     protected $errors = [];
 
     /**
-     * コンソールコマンドの実行
+     * コンソールコマンドの実行.
      *
      * @return mixed
      */
@@ -73,11 +72,11 @@ abstract class CommandAbstract extends Command
             // エラーメッセージとトレースを本文にセットする
             $body = $e->getMessage()."\n".$e->getTraceAsString();
             // エラーの配列がある場合は本文に追加
-            if (!empty($this->errors)) {
+            if (! empty($this->errors)) {
                 $body .= "\n\n【エラー一覧】\n".implode("\n", $this->errors);
             }
             // メッセージの配列がある場合は本文に追加
-            if (!empty($this->messages)) {
+            if (! empty($this->messages)) {
                 $body .= "\n\n【メッセージ一覧】\n".implode("\n", $this->messages);
             }
             // コンソールに出力
@@ -95,7 +94,7 @@ abstract class CommandAbstract extends Command
     }
 
     /**
-     * ログの初期化
+     * ログの初期化.
      */
     protected function initLogger()
     {
@@ -107,7 +106,7 @@ abstract class CommandAbstract extends Command
     /**
      * 実行するバッチ
      * 下記は例
-     * extendして利用すること
+     * extendして利用すること.
      */
     protected function process()
     {
@@ -132,7 +131,7 @@ abstract class CommandAbstract extends Command
     }
 
     /**
-     * 事前処理
+     * 事前処理.
      */
     protected function preProcess()
     {
@@ -140,15 +139,14 @@ abstract class CommandAbstract extends Command
     }
 
     /**
-     * 事後処理
+     * 事後処理.
      */
     protected function postProcess()
     {
-
     }
 
     /**
-     * メッセージを追加する
+     * メッセージを追加する.
      *
      * @param any $message
      */
@@ -158,7 +156,7 @@ abstract class CommandAbstract extends Command
     }
 
     /**
-     * エラーを追加する
+     * エラーを追加する.
      *
      * @param any $message
      */
@@ -166,5 +164,4 @@ abstract class CommandAbstract extends Command
     {
         $this->errors[] = '['.(new \DateTime())->format('Y/m/d H:i:s').'] '.var_export($message, true);
     }
-
 }

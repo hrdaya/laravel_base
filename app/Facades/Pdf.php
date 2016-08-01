@@ -6,9 +6,8 @@ use Illuminate\Support\Facades\Facade;
 
 class Pdf extends Facade
 {
-
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     protected static function getFacadeAccessor()
     {

@@ -65,7 +65,7 @@ class RouteServiceProvider extends ServiceProvider
             ],
             function ($router) {
                 foreach (\Config::get('routes.web') as $file) {
-                    require app_path('Http/Routes/web') . DIRECTORY_SEPARATOR . $file . '.php';
+                    require app_path('Http/Routes/web').DIRECTORY_SEPARATOR.$file.'.php';
                 }
             }
         );
@@ -89,7 +89,7 @@ class RouteServiceProvider extends ServiceProvider
             ],
             function ($router) {
                 foreach (\Config::get('routes.testing') as $file) {
-                    require app_path('Http/Routes/testing') . DIRECTORY_SEPARATOR . $file . '.php';
+                    require app_path('Http/Routes/testing').DIRECTORY_SEPARATOR.$file.'.php';
                 }
             }
         );

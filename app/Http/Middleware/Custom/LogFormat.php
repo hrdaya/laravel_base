@@ -7,7 +7,6 @@ use App\Libs\LogFormat as AppLog;
 
 class LogFormat
 {
-
     /**
      * Handle an incoming request.
      *
@@ -21,9 +20,8 @@ class LogFormat
         $module = explode('.', \Route::currentRouteName());
         $monolog = \Log::getMonolog();
 
-        (new AppLog())->init($monolog, $module[0] . '_' . studly_case($module[1] . '_controller') ?: 'unknownHttp');
+        (new AppLog())->init($monolog, $module[0].'_'.studly_case($module[1].'_controller') ?: 'unknownHttp');
 
         return $next($request);
     }
-
 }
