@@ -9,7 +9,6 @@ use Illuminate\Validation\ValidationException;
 
 abstract class Request extends FormRequest
 {
-
     /**
      * ユーザーがこのリクエストの権限を持っているかを判断する
      * アプリケーションの他の場所で認証のロジックを行おうと設計しているのでしたら、シンプルにauthorizeメソッドからtrueを返してください。
@@ -22,7 +21,7 @@ abstract class Request extends FormRequest
     }
 
     /**
-     * フォームリクエストのバリデータを拡張
+     * フォームリクエストのバリデータを拡張.
      *
      * @see    \Illuminate\Foundation\Http\FormRequest::getValidatorInstance()
      *
@@ -54,7 +53,7 @@ abstract class Request extends FormRequest
     /**
      * 値検証前の処理
      * 値のフィルタリングを行う
-     * ここでは型の変換を行わない(文字列を数字に変換してしまうとバリデーションが正常処理でなくなるため)
+     * ここでは型の変換を行わない(文字列を数字に変換してしまうとバリデーションが正常処理でなくなるため).
      */
     protected function beforeValidate()
     {
@@ -68,7 +67,7 @@ abstract class Request extends FormRequest
     }
 
     /**
-     * プレフィルター用のデータを取得する
+     * プレフィルター用のデータを取得する.
      *
      * @return array
      */
@@ -79,7 +78,7 @@ abstract class Request extends FormRequest
 
     /**
      * 値検証後の処理
-     * 通常のバリデータでは処理できない検証処理をここで行う
+     * 通常のバリデータでは処理できない検証処理をここで行う.
      *
      * @param  \Illuminate\Contracts\Validation\Validator $validator
      *
@@ -97,7 +96,7 @@ abstract class Request extends FormRequest
     }
 
     /**
-     * リクエストの値の型変換を行う
+     * リクエストの値の型変換を行う.
      */
     protected function changeType()
     {
@@ -111,7 +110,7 @@ abstract class Request extends FormRequest
     }
 
     /**
-     * 型変換用のデータを取得する
+     * 型変換用のデータを取得する.
      *
      * @return array
      */
@@ -122,7 +121,7 @@ abstract class Request extends FormRequest
 
     /**
      * Handle a failed validation attempt.
-     * ここは5.2までのバグ的なものの修正なので5.3以降は削除すること
+     * ここは5.2までのバグ的なものの修正なので5.3以降は削除すること.
      *
      * @param  \Illuminate\Contracts\Validation\Validator $validator
      *
@@ -134,5 +133,4 @@ abstract class Request extends FormRequest
     {
         throw new ValidationException($validator, $this->response($this->formatErrors($validator)));
     }
-
 }
