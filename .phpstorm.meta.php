@@ -3,7 +3,7 @@ namespace PHPSTORM_META {
 
    /**
     * PhpStorm Meta file, to provide autocomplete information for PhpStorm
-    * Generated on 2016-07-31.
+    * Generated on 2016-08-01.
     *
     * @author Barry vd. Heuvel <barryvdh@gmail.com>
     * @see https://github.com/barryvdh/laravel-ide-helper
@@ -135,6 +135,10 @@ namespace PHPSTORM_META {
             'Collective\Bus\Dispatcher' instanceof \Collective\Bus\Dispatcher,
             'html' instanceof \Collective\Html\HtmlBuilder,
             'form' instanceof \Collective\Html\FormBuilder,
+            'md5' instanceof \App\Libs\Hash\Md5,
+            'sha1' instanceof \App\Libs\Hash\Sha1,
+            'sha256' instanceof \App\Libs\Hash\Sha256,
+            'sha512' instanceof \App\Libs\Hash\Sha512,
         ],
         \Illuminate\Contracts\Container\Container::make('') => [
             '' == '@',
@@ -262,6 +266,10 @@ namespace PHPSTORM_META {
             'Collective\Bus\Dispatcher' instanceof \Collective\Bus\Dispatcher,
             'html' instanceof \Collective\Html\HtmlBuilder,
             'form' instanceof \Collective\Html\FormBuilder,
+            'md5' instanceof \App\Libs\Hash\Md5,
+            'sha1' instanceof \App\Libs\Hash\Sha1,
+            'sha256' instanceof \App\Libs\Hash\Sha256,
+            'sha512' instanceof \App\Libs\Hash\Sha512,
         ],
         \App::make('') => [
             '' == '@',
@@ -389,6 +397,10 @@ namespace PHPSTORM_META {
             'Collective\Bus\Dispatcher' instanceof \Collective\Bus\Dispatcher,
             'html' instanceof \Collective\Html\HtmlBuilder,
             'form' instanceof \Collective\Html\FormBuilder,
+            'md5' instanceof \App\Libs\Hash\Md5,
+            'sha1' instanceof \App\Libs\Hash\Sha1,
+            'sha256' instanceof \App\Libs\Hash\Sha256,
+            'sha512' instanceof \App\Libs\Hash\Sha512,
         ],
         \app('') => [
             '' == '@',
@@ -516,6 +528,10 @@ namespace PHPSTORM_META {
             'Collective\Bus\Dispatcher' instanceof \Collective\Bus\Dispatcher,
             'html' instanceof \Collective\Html\HtmlBuilder,
             'form' instanceof \Collective\Html\FormBuilder,
+            'md5' instanceof \App\Libs\Hash\Md5,
+            'sha1' instanceof \App\Libs\Hash\Sha1,
+            'sha256' instanceof \App\Libs\Hash\Sha256,
+            'sha512' instanceof \App\Libs\Hash\Sha512,
         ],
     ];
 }

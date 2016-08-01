@@ -1,7 +1,7 @@
 <?php
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.2.41 on 2016-07-31.
+ * Generated for Laravel 5.2.41 on 2016-08-01.
  *
  * @author Barry vd. Heuvel <barryvdh@gmail.com>
  * @see https://github.com/barryvdh/laravel-ide-helper
@@ -17883,6 +17883,132 @@ namespace {
         public static function ImageSVG($file, $x = '', $y = '', $w = 0, $h = 0, $link = '', $align = '', $palign = '', $border = 0, $fitonpage = false){
             //Method inherited from \TCPDF            
             return \App\Libs\Pdf::ImageSVG($file, $x, $y, $w, $h, $link, $align, $palign, $border, $fitonpage);
+        }
+        
+    }
+
+
+    class Sha1 extends \App\Facades\Sha1{
+        
+        /**
+         * Hash the given value.
+         *
+         * @param string $value
+         * @param array $options
+         * @return string 40文字
+         * @static 
+         */
+        public static function make($value, $options = array()){
+            return \App\Libs\Hash\Sha1::make($value, $options);
+        }
+        
+        /**
+         * Check the given plain value against a hash.
+         *
+         * @param string $value
+         * @param string $hashedValue
+         * @param array $options
+         * @return bool 
+         * @static 
+         */
+        public static function check($value, $hashedValue, $options = array()){
+            return \App\Libs\Hash\Sha1::check($value, $hashedValue, $options);
+        }
+        
+        /**
+         * Check if the given hash has been hashed using the given options.
+         *
+         * @param string $hashedValue
+         * @param array $options
+         * @return bool 
+         * @static 
+         */
+        public static function needsRehash($hashedValue, $options = array()){
+            return \App\Libs\Hash\Sha1::needsRehash($hashedValue, $options);
+        }
+        
+    }
+
+
+    class Sha256 extends \App\Facades\Sha256{
+        
+        /**
+         * Hash the given value.
+         *
+         * @param string $value
+         * @param array $options
+         * @return string 64文字
+         * @static 
+         */
+        public static function make($value, $options = array()){
+            return \App\Libs\Hash\Sha256::make($value, $options);
+        }
+        
+        /**
+         * Check the given plain value against a hash.
+         *
+         * @param string $value
+         * @param string $hashedValue
+         * @param array $options
+         * @return bool 
+         * @static 
+         */
+        public static function check($value, $hashedValue, $options = array()){
+            return \App\Libs\Hash\Sha256::check($value, $hashedValue, $options);
+        }
+        
+        /**
+         * Check if the given hash has been hashed using the given options.
+         *
+         * @param string $hashedValue
+         * @param array $options
+         * @return bool 
+         * @static 
+         */
+        public static function needsRehash($hashedValue, $options = array()){
+            return \App\Libs\Hash\Sha256::needsRehash($hashedValue, $options);
+        }
+        
+    }
+
+
+    class Sha512 extends \App\Facades\Sha512{
+        
+        /**
+         * Hash the given value.
+         *
+         * @param string $value
+         * @param array $options
+         * @return string 128文字
+         * @static 
+         */
+        public static function make($value, $options = array()){
+            return \App\Libs\Hash\Sha512::make($value, $options);
+        }
+        
+        /**
+         * Check the given plain value against a hash.
+         *
+         * @param string $value
+         * @param string $hashedValue
+         * @param array $options
+         * @return bool 
+         * @static 
+         */
+        public static function check($value, $hashedValue, $options = array()){
+            return \App\Libs\Hash\Sha512::check($value, $hashedValue, $options);
+        }
+        
+        /**
+         * Check if the given hash has been hashed using the given options.
+         *
+         * @param string $hashedValue
+         * @param array $options
+         * @return bool 
+         * @static 
+         */
+        public static function needsRehash($hashedValue, $options = array()){
+            return \App\Libs\Hash\Sha512::needsRehash($hashedValue, $options);
         }
         
     }
