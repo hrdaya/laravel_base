@@ -6,7 +6,6 @@ use Illuminate\Contracts\Hashing\Hasher as HasherContract;
 
 class Sha512 implements HasherContract
 {
-
     /**
      * Hash the given value.
      *
@@ -31,7 +30,7 @@ class Sha512 implements HasherContract
      */
     public function check($value, $hashedValue, array $options = [])
     {
-        return ($this->make($value) === $hashedValue);
+        return $this->make($value) === $hashedValue;
     }
 
     /**
@@ -46,5 +45,4 @@ class Sha512 implements HasherContract
     {
         return false;
     }
-
 }
