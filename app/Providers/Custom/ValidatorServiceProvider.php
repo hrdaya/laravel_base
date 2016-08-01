@@ -8,15 +8,14 @@ use Symfony\Component\Translation\TranslatorInterface;
 
 class ValidatorServiceProvider extends ServiceProvider
 {
-
     /**
-     * アプリケーションサービスの初期処理
+     * アプリケーションサービスの初期処理.
      *
      * @return void
      */
     protected function boot()
     {
-        /**
+        /*
          * Create a new Validator instance.
          *
          * @param  \Symfony\Component\Translation\TranslatorInterface $translator
@@ -41,7 +40,7 @@ class ValidatorServiceProvider extends ServiceProvider
     }
 
     /**
-     * アプリケーションサービスの登録
+     * アプリケーションサービスの登録.
      *
      * @return void
      */
@@ -49,5 +48,4 @@ class ValidatorServiceProvider extends ServiceProvider
     {
         //
     }
-
 }
