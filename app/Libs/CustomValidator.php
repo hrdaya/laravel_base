@@ -19,9 +19,8 @@ use Illuminate\Validation\Validator;
 
 class CustomValidator extends Validator
 {
-
     /**
-     * JANコード・ITFコード等のチェックデジットを確認する
+     * JANコード・ITFコード等のチェックデジットを確認する.
      *
      * @param string $attribute  フィールド名
      * @param mixed  $value      検証する値
@@ -38,17 +37,16 @@ class CustomValidator extends Validator
         $odd = 0;
         for ($i = 0, $len = count($arr) - 1; $i < $len; $i++) {
             if (($i + 1) % 2 == 0) {
-                $even += (int)$arr[$i];
+                $even += (int) $arr[$i];
             } else {
-                $odd += (int)$arr[$i];
+                $odd += (int) $arr[$i];
             }
         }
         // 偶数の和を3倍+奇数の総和を加算して、下1桁の数字を10から引く
-        $cd = 10 - (int)substr((string)(($even * 3) + $odd), -1);
+        $cd = 10 - (int) substr((string) (($even * 3) + $odd), -1);
         // 10なら1の位は0なので、0にする
-        $cd = $cd === 10 ? '0' : (string)$cd;
+        $cd = $cd === 10 ? '0' : (string) $cd;
 
         return substr($value, -1) === $cd;
     }
-
 }
