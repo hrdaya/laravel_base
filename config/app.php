@@ -183,10 +183,11 @@ return [
          * Original Providers
          */
         App\Providers\Custom\ConfigServiceProvider::class,
-        App\Providers\Custom\PdfServiceProvider::class,
-        App\Providers\Custom\HtmlServiceProvider::class,
-        App\Providers\Custom\ViewExtendsServiceProvider::class,
         App\Providers\Custom\HasherServiceProvider::class,
+        App\Providers\Custom\HtmlServiceProvider::class,
+        App\Providers\Custom\PdfServiceProvider::class,
+        App\Providers\Custom\ValidatorServiceProvider::class,
+        App\Providers\Custom\ViewExtendsServiceProvider::class,
 
     ],
 
