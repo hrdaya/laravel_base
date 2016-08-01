@@ -7,9 +7,8 @@ use Illuminate\Http\Request;
 
 class IndexController extends Controller
 {
-
     /**
-     * トップページ
+     * トップページ.
      */
     public function index(Request $request)
     {
@@ -24,6 +23,7 @@ class IndexController extends Controller
         );
 
         \Log::info(explode('.', \Route::currentRouteName()));
+
         return view('index.index.index', []);
     }
 }

@@ -7,7 +7,6 @@ use App\Libs\Pdf;
 
 class PdfServiceProvider extends ServiceProvider
 {
-
     /**
      * Register any application services.
      *

@@ -7,9 +7,8 @@ use Illuminate\Http\Request;
 
 class IndexController extends Controller
 {
-
     /**
-     * トップページ
+     * トップページ.
      */
     public function index(Request $request)
     {

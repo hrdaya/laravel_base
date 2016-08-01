@@ -6,7 +6,6 @@ use Closure;
 
 class AjaxOnly
 {
-
     /**
      * Handle an incoming request.
      *
@@ -18,12 +17,11 @@ class AjaxOnly
     public function handle($request, Closure $next)
     {
         // リクエストがajaxではない場合の処理
-        if (!$request->ajax()) {
+        if (! $request->ajax()) {
             abort(404);
         }
 
         // ajaxからのアクセスだと、そのまま次の処理に進みます
         return $next($request);
     }
-
 }

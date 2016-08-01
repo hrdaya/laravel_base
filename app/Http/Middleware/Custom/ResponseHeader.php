@@ -6,7 +6,6 @@ use Closure;
 
 class ResponseHeader
 {
-
     /**
      * Handle an incoming request.
      *
@@ -35,7 +34,7 @@ class ResponseHeader
         $response->header('X-Frame-Options', 'SAMEORIGIN');
 
         // Content Security Policyの適用
-        if (!config('app.debug')) {
+        if (! config('app.debug')) {
             $policy = [
                 "default-src 'self'",
                 "object-src 'none'",
@@ -63,5 +62,4 @@ class ResponseHeader
 
         return $response;
     }
-
 }

@@ -148,8 +148,8 @@ return [
             'options'  => [
                 PDO::ATTR_CASE => PDO::CASE_LOWER,
                 PDO::ATTR_EMULATE_PREPARES => false,
-                PDO::ATTR_PERSISTENT => false
-            ]
+                PDO::ATTR_PERSISTENT => false,
+            ],
 
         ],
 

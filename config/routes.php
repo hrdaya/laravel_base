@@ -6,7 +6,7 @@ return [
      * 読み込む順番に記述する
      */
     'web' => [
-        'index'
+        'index',
     ],
 
     /*
@@ -14,6 +14,6 @@ return [
      * 読み込む順番に記述する
      */
     'testing' => [
-        'index'
-    ]
+        'index',
+    ],
 ];
