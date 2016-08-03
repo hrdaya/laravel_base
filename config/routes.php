@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 return [
     /*
      * デフォルトのルーティングに利用するファイル名一覧

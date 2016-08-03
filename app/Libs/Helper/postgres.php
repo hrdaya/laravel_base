@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 // PHPの配列からPostgresの配列への変換
 if (function_exists('toPgArray')) {
     function toPgArray(string $value)
