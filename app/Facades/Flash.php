@@ -6,13 +6,11 @@ use Illuminate\Support\Facades\Facade;
 
 class Flash extends Facade
 {
-
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     protected static function getFacadeAccessor()
     {
         return 'flash';
     }
-
 }
