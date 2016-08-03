@@ -3,7 +3,7 @@
 namespace App\Libs;
 
 /**
- * フラッシュメッセージ管理クラス
+ * フラッシュメッセージ管理クラス.
  *
  * メッセージレベル(引数の$messageはstringもしくは配列を使用できます)
  *   Flash::info($message);    インフォメーション
@@ -13,14 +13,11 @@ namespace App\Libs;
  *
  * モーダルメッセージ(引数の$message, $title[省略可]共に文字列のみ使用可能です)
  *   Flash::error($message, $title);
- *
- * @package App\Libs
  */
 class Flash
 {
-
     /**
-     * インフォメーション
+     * インフォメーション.
      *
      * @param string|array $message
      *
@@ -28,7 +25,7 @@ class Flash
      */
     public function info($message)
     {
-        if (!empty($message)) {
+        if (! empty($message)) {
             $this->message($message, 'info');
         }
 
@@ -36,7 +33,7 @@ class Flash
     }
 
     /**
-     * 成功メッセージ
+     * 成功メッセージ.
      *
      * @param  string|array $message
      *
@@ -44,7 +41,7 @@ class Flash
      */
     public function success($message)
     {
-        if (!empty($message)) {
+        if (! empty($message)) {
             $this->message($message, 'success');
         }
 
@@ -52,7 +49,7 @@ class Flash
     }
 
     /**
-     * 注意メッセージ
+     * 注意メッセージ.
      *
      * @param  string|array $message
      *
@@ -60,7 +57,7 @@ class Flash
      */
     public function warning($message)
     {
-        if (!empty($message)) {
+        if (! empty($message)) {
             $this->message($message, 'warning');
         }
 
@@ -68,7 +65,7 @@ class Flash
     }
 
     /**
-     * エラーメッセージ
+     * エラーメッセージ.
      *
      * @param  string|array $message
      *
@@ -76,7 +73,7 @@ class Flash
      */
     public function error($message)
     {
-        if (!empty($message)) {
+        if (! empty($message)) {
             $this->message($message, 'danger');
         }
 
@@ -94,7 +91,7 @@ class Flash
     public function modal(string $message, string $title = '')
     {
         \Session::flash('flash_notification.modal', $message);
-        if (!empty($title)) {
+        if (! empty($title)) {
             \Session::flash('flash_notification.title', $title);
         }
 
@@ -125,10 +122,9 @@ class Flash
             \Session::flash('flash_notification.'.$level, $flash);
         } else {
             // まだ登録されていない場合は配列にして保存
-            \Session::flash('flash_notification.'.$level, (array)$message);
+            \Session::flash('flash_notification.'.$level, (array) $message);
         }
 
         return $this;
     }
-
 }

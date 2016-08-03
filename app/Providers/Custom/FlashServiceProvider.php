@@ -7,7 +7,6 @@ use Illuminate\Support\ServiceProvider;
 
 class FlashServiceProvider extends ServiceProvider
 {
-
     /**
      * Register the service provider.
      *
@@ -22,5 +21,4 @@ class FlashServiceProvider extends ServiceProvider
             }
         );
     }
-
 }
