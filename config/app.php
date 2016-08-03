@@ -183,6 +183,7 @@ return [
          * Original Providers
          */
         App\Providers\Custom\ConfigServiceProvider::class,
+        App\Providers\Custom\FlashServiceProvider::class,
         App\Providers\Custom\HasherServiceProvider::class,
         App\Providers\Custom\HtmlServiceProvider::class,
         App\Providers\Custom\PdfServiceProvider::class,
@@ -238,16 +239,18 @@ return [
         /*
          * Composer Installed Settings
          */
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
+        'Excel' => Maatwebsite\Excel\Facades\Excel::class,
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
-        'Excel' => Maatwebsite\Excel\Facades\Excel::class,
         'Image' => Intervention\Image\Facades\Image::class,
-        'Debugbar' => Barryvdh\Debugbar\Facade::class,
 
         /*
          * Original Alias
          */
+        'Flash' => App\Facades\Flash::class,
         'Pdf' => App\Facades\Pdf::class,
+        'Md5' => App\Facades\Md5::class,
         'Sha1' => App\Facades\Sha1::class,
         'Sha256' => App\Facades\Sha256::class,
         'Sha512' => App\Facades\Sha512::class,

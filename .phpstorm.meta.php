@@ -3,7 +3,7 @@ namespace PHPSTORM_META {
 
    /**
     * PhpStorm Meta file, to provide autocomplete information for PhpStorm
-    * Generated on 2016-08-01.
+    * Generated on 2016-08-03.
     *
     * @author Barry vd. Heuvel <barryvdh@gmail.com>
     * @see https://github.com/barryvdh/laravel-ide-helper
@@ -52,6 +52,7 @@ namespace PHPSTORM_META {
             'GrahamCampbell\Exceptions\ExceptionInfo' instanceof \GrahamCampbell\Exceptions\ExceptionInfo,
             'GrahamCampbell\Exceptions\Displayers\HtmlDisplayer' instanceof \GrahamCampbell\Exceptions\Displayers\HtmlDisplayer,
             'GrahamCampbell\Exceptions\Filters\VerboseFilter' instanceof \GrahamCampbell\Exceptions\Filters\VerboseFilter,
+            'flash' instanceof \App\Libs\Flash,
             'pdf' instanceof \App\Libs\Pdf,
             'blade.compiler' instanceof \Illuminate\View\Compilers\BladeCompiler,
             'Illuminate\Broadcasting\BroadcastManager' instanceof \Illuminate\Broadcasting\BroadcastManager,
@@ -183,6 +184,7 @@ namespace PHPSTORM_META {
             'GrahamCampbell\Exceptions\ExceptionInfo' instanceof \GrahamCampbell\Exceptions\ExceptionInfo,
             'GrahamCampbell\Exceptions\Displayers\HtmlDisplayer' instanceof \GrahamCampbell\Exceptions\Displayers\HtmlDisplayer,
             'GrahamCampbell\Exceptions\Filters\VerboseFilter' instanceof \GrahamCampbell\Exceptions\Filters\VerboseFilter,
+            'flash' instanceof \App\Libs\Flash,
             'pdf' instanceof \App\Libs\Pdf,
             'blade.compiler' instanceof \Illuminate\View\Compilers\BladeCompiler,
             'Illuminate\Broadcasting\BroadcastManager' instanceof \Illuminate\Broadcasting\BroadcastManager,
@@ -314,6 +316,7 @@ namespace PHPSTORM_META {
             'GrahamCampbell\Exceptions\ExceptionInfo' instanceof \GrahamCampbell\Exceptions\ExceptionInfo,
             'GrahamCampbell\Exceptions\Displayers\HtmlDisplayer' instanceof \GrahamCampbell\Exceptions\Displayers\HtmlDisplayer,
             'GrahamCampbell\Exceptions\Filters\VerboseFilter' instanceof \GrahamCampbell\Exceptions\Filters\VerboseFilter,
+            'flash' instanceof \App\Libs\Flash,
             'pdf' instanceof \App\Libs\Pdf,
             'blade.compiler' instanceof \Illuminate\View\Compilers\BladeCompiler,
             'Illuminate\Broadcasting\BroadcastManager' instanceof \Illuminate\Broadcasting\BroadcastManager,
@@ -445,6 +448,7 @@ namespace PHPSTORM_META {
             'GrahamCampbell\Exceptions\ExceptionInfo' instanceof \GrahamCampbell\Exceptions\ExceptionInfo,
             'GrahamCampbell\Exceptions\Displayers\HtmlDisplayer' instanceof \GrahamCampbell\Exceptions\Displayers\HtmlDisplayer,
             'GrahamCampbell\Exceptions\Filters\VerboseFilter' instanceof \GrahamCampbell\Exceptions\Filters\VerboseFilter,
+            'flash' instanceof \App\Libs\Flash,
             'pdf' instanceof \App\Libs\Pdf,
             'blade.compiler' instanceof \Illuminate\View\Compilers\BladeCompiler,
             'Illuminate\Broadcasting\BroadcastManager' instanceof \Illuminate\Broadcasting\BroadcastManager,
