@@ -14,7 +14,7 @@ class ViewExtends
         \Blade::directive(
             'nl2br',
             function ($value) {
-                return '<?＝ nl2br(e('.$value.'), false); ?>';
+                return 'nl2br(e'.$value.', false)';
             }
         );
 
