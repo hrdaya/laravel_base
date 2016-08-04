@@ -46,3 +46,19 @@ if (function_exists('array_split')) {
         return [$headers, $details];
     }
 }
+
+if (function_exists('array_key_exists_or')) {
+    /**
+     * 配列に指定したキーが無ければデフォルト値を返す.
+     *
+     * @param string $key     キー
+     * @param array  $arr     配列
+     * @param        $default デフォルト値
+     *
+     * @return mixed
+     */
+    function array_key_exists_or($key, array $arr, $default)
+    {
+        return array_key_exists($key, $arr) ? $arr[$key] : $default;
+    }
+}
