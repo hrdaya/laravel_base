@@ -1,10 +1,10 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 if (function_exists('array_split')) {
     /**
-     * リクエストパラメータをヘッダと明細に変換
+     * リクエストパラメータをヘッダと明細に変換.
      *
      * @param array $all         変換元の配列
      * @param array $headerParam 取得するヘッダのキーとデフォルト値
