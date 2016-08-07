@@ -3,7 +3,7 @@ namespace PHPSTORM_META {
 
    /**
     * PhpStorm Meta file, to provide autocomplete information for PhpStorm
-    * Generated on 2016-08-04.
+    * Generated on 2016-08-07.
     *
     * @author Barry vd. Heuvel <barryvdh@gmail.com>
     * @see https://github.com/barryvdh/laravel-ide-helper
@@ -134,6 +134,7 @@ namespace PHPSTORM_META {
             'command.ide-helper.models' instanceof \Barryvdh\LaravelIdeHelper\Console\ModelsCommand,
             'command.ide-helper.meta' instanceof \Barryvdh\LaravelIdeHelper\Console\MetaCommand,
             'Collective\Bus\Dispatcher' instanceof \Collective\Bus\Dispatcher,
+            'purifier' instanceof \Mews\Purifier\Purifier,
             'md5' instanceof \App\Libs\Hash\Md5,
             'sha1' instanceof \App\Libs\Hash\Sha1,
             'sha256' instanceof \App\Libs\Hash\Sha256,
@@ -266,6 +267,7 @@ namespace PHPSTORM_META {
             'command.ide-helper.models' instanceof \Barryvdh\LaravelIdeHelper\Console\ModelsCommand,
             'command.ide-helper.meta' instanceof \Barryvdh\LaravelIdeHelper\Console\MetaCommand,
             'Collective\Bus\Dispatcher' instanceof \Collective\Bus\Dispatcher,
+            'purifier' instanceof \Mews\Purifier\Purifier,
             'md5' instanceof \App\Libs\Hash\Md5,
             'sha1' instanceof \App\Libs\Hash\Sha1,
             'sha256' instanceof \App\Libs\Hash\Sha256,
@@ -398,6 +400,7 @@ namespace PHPSTORM_META {
             'command.ide-helper.models' instanceof \Barryvdh\LaravelIdeHelper\Console\ModelsCommand,
             'command.ide-helper.meta' instanceof \Barryvdh\LaravelIdeHelper\Console\MetaCommand,
             'Collective\Bus\Dispatcher' instanceof \Collective\Bus\Dispatcher,
+            'purifier' instanceof \Mews\Purifier\Purifier,
             'md5' instanceof \App\Libs\Hash\Md5,
             'sha1' instanceof \App\Libs\Hash\Sha1,
             'sha256' instanceof \App\Libs\Hash\Sha256,
@@ -530,6 +533,7 @@ namespace PHPSTORM_META {
             'command.ide-helper.models' instanceof \Barryvdh\LaravelIdeHelper\Console\ModelsCommand,
             'command.ide-helper.meta' instanceof \Barryvdh\LaravelIdeHelper\Console\MetaCommand,
             'Collective\Bus\Dispatcher' instanceof \Collective\Bus\Dispatcher,
+            'purifier' instanceof \Mews\Purifier\Purifier,
             'md5' instanceof \App\Libs\Hash\Md5,
             'sha1' instanceof \App\Libs\Hash\Sha1,
             'sha256' instanceof \App\Libs\Hash\Sha256,

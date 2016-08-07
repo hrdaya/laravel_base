@@ -1,7 +1,7 @@
 <?php
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.2.41 on 2016-08-04.
+ * Generated for Laravel 5.2.41 on 2016-08-07.
  *
  * @author Barry vd. Heuvel <barryvdh@gmail.com>
  * @see https://github.com/barryvdh/laravel-ide-helper
@@ -12866,6 +12866,33 @@ namespace {
          */
         public static function cache($callback, $lifetime = null, $returnObj = false){
             return \Intervention\Image\ImageManager::cache($callback, $lifetime, $returnObj);
+        }
+        
+    }
+
+
+    class Purifier extends \Mews\Purifier\Facades\Purifier{
+        
+        /**
+         * 
+         *
+         * @param $dirty
+         * @param null $config
+         * @return mixed 
+         * @static 
+         */
+        public static function clean($dirty, $config = null){
+            return \Mews\Purifier\Purifier::clean($dirty, $config);
+        }
+        
+        /**
+         * Get HTMLPurifier instance.
+         *
+         * @return \HTMLPurifier 
+         * @static 
+         */
+        public static function getInstance(){
+            return \Mews\Purifier\Purifier::getInstance();
         }
         
     }
