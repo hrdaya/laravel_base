@@ -1,5 +1,5 @@
 {
-  "css/common.css": "css/common-feb6425b67.css",
+  "css/common.css": "css/common-a2e35ed069.css",
   "img/document_letter_marked.png": "img/document_letter_marked-620315191c.png",
   "img/icon_access.png": "img/icon_access-37d1262af1.png",
   "img/icon_csv.png": "img/icon_csv-53297743fe.png",
@@ -20,12 +20,8 @@
   "img/icon_word.png": "img/icon_word-1d40b60dbc.png",
   "img/icon_zip.png": "img/icon_zip-ee18a5c9ab.png",
   "img/loading.gif": "img/loading-133a5ce093.gif",
-  "js/ajax.js": "js/ajax-7eaebcad9a.js",
-  "js/bootstrap.js": "js/bootstrap-04c84852e9.js",
-  "js/jquery.js": "js/jquery-64ec1b9cff.js",
-  "js/vender/bootstrap.js": "js/vender/bootstrap-5869c96cc8.js",
-  "js/vender/jquery.js": "js/vender/jquery-05e51b1db5.js",
-  "js/vender/lodash.js": "js/vender/lodash-ff2d916fa4.js",
-  "js/vender/vue.js": "js/vender/vue-a43164fe16.js",
-  "js/vue.js": "js/vue-0665aea3b5.js"
+  "js/ajax.js": "js/ajax-1997295fb5.js",
+  "js/bootstrap.js": "js/bootstrap-5869c96cc8.js",
+  "js/jquery.js": "js/jquery-05e51b1db5.js",
+  "js/vue.js": "js/vue-a43164fe16.js"
 }

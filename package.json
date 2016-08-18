@@ -2,17 +2,13 @@
   "private": true,
   "scripts": {
     "prod": "gulp --production",
-    "dev": "gulp watch",
-    "test": "gulp eslint"
+    "dev": "gulp watch"
   },
   "devDependencies": {
-    "bootstrap-sass": "^3.0.0",
-    "eslint": "^3.2.2",
-    "eslint-config-eslint": "^3.0.0",
     "gulp": "^3.9.1",
-    "jquery": "^3.0.0",
     "laravel-elixir": "^5.0.0",
-    "laravel-elixir-eslint": "^3.0.0",
+    "bootstrap-sass": "^3.0.0",
+    "jquery": "^3.0.0",
     "vue": "^1.0.0"
   }
 }
